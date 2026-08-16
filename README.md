@@ -1,28 +1,91 @@
-# End-to-End ETL Data Pipeline
+@'
+# 🚀 End-to-End ETL Data Engineering Pipeline
 
-## Project Overview
+An end-to-end Data Engineering project built with Python, Pandas, SQLAlchemy, PyMySQL, REST APIs, and MySQL.
 
-This project demonstrates an end-to-end ETL pipeline using:
+The pipeline extracts data from external sources, validates and transforms the data, applies schema mapping and incremental processing, and loads new records into MySQL.
 
-- Python
-- Pandas
-- NumPy
-- MySQL
-- REST APIs
+---
 
-## Workflow
+## 📌 Project Overview
 
-Extract → Transform → Load
+This project demonstrates a modular ETL pipeline designed to process product data from a REST API.
 
-### Source Systems
+### Source
 
-- CSV Files
-- APIs
+- REST API
+- CSV files
 
-### Target System
+### Target
 
 - MySQL Database
 
-## Author
+### Main ETL Flow
 
-Ravi Ranjan
+REST API / CSV  
+↓  
+Extract  
+↓  
+Schema Mapping  
+↓  
+Data Validation  
+↓  
+Transformation  
+↓  
+Watermark Filtering  
+↓  
+Incremental Loading  
+↓  
+MySQL  
+↓  
+Logging & Monitoring
+
+---
+
+## 🏗️ Architecture
+
+```text
+              REST API / CSV
+                    |
+                    v
+             +-------------+
+             |   Extract   |
+             +-------------+
+                    |
+                    v
+             +-------------+
+             |   Schema    |
+             |   Mapping   |
+             +-------------+
+                    |
+                    v
+             +-------------+
+             | Validation  |
+             +-------------+
+                    |
+                    v
+             +-------------+
+             | Transform   |
+             +-------------+
+                    |
+                    v
+             +-------------+
+             |  Watermark  |
+             |  Filtering  |
+             +-------------+
+                    |
+                    v
+             +-------------+
+             | Incremental |
+             |    Load     |
+             +-------------+
+                    |
+                    v
+             +-------------+
+             |    MySQL    |
+             +-------------+
+                    |
+                    v
+             +-------------+
+             |   Logging   |
+             +-------------+
