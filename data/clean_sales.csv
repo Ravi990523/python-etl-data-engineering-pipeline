@@ -1,0 +1,10 @@
+order_id,product,quantity,price,total_amount
+1001,Laptop,2.0,50000,100000.0
+1002,Mouse,3.0,500,1500.0
+1003,Keyboard,1.0,1200,1200.0
+1004,Monitor,1.0,15000,15000.0
+1005,Headphone,2.0,2500,5000.0
+1007,Headphone,1.0,2000,2000.0
+1008,Headphone,1.0,2000,2000.0
+1009,Headphone,1.0,2000,2000.0
+1010,Headphone,1.0,1000,1000.0
